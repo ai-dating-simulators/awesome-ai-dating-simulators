@@ -63,18 +63,23 @@ The layer that produces the reply.
 
 Shipped products. Platform is listed because it is the first thing people ask.
 
-Descriptions here are limited to what each product documents publicly. Most of this category does not publish its mechanics, so several entries are shorter than they would be if the information existed. That gap is a large part of why the [glossary](#mechanics-glossary) below is here. If you work on one of these and the description undersells it, send a pull request with specifics.
+Feature lists below come from each product's own store listing or site, checked August 2026. Where a product does not document a mechanic, it is not listed rather than assumed.
 
-- [RizzMaster](https://rizzmaster.net) `iOS` *(see disclosure)* - Dating simulator built around texting practice. You match, text to raise a relationship meter, and clear objectives across nine levels that get harder as you climb. Messages are scored, so weak replies can trigger a ghost state or lose the character permanently. Characters keep their own online hours and recall earlier sessions.
-- [Blush](https://blush.ai) `iOS` `Android` - Built by the Replika team and the most visible product in the category. AI generated matches with their own backstories, framed as a low stakes place to practice dating conversation.
-- [Kindroid](https://kindroid.ai) `iOS` `Android` `Web` - Companion app with deep character authoring: backstory, voice, appearance and long term memory are all user defined. Closest fit if you want to write the romance rather than be handed one.
-- [Nomi](https://nomi.ai) `iOS` `Android` `Web` - Companion app that leans on long term memory and consistent personality across sessions.
-- [Character.AI](https://character.ai) `iOS` `Android` `Web` - Not a dating sim, but the community has built enormous numbers of romance characters on it, and for many people it was the entry point to the genre.
-- [Replika](https://replika.com) `iOS` `Android` `Web` - The app that made the category legible to a general audience. Relationship status is an explicit setting rather than something you play toward.
-- [Kissable](https://kissable.app) `iOS` `Android` - Open ended relationship plus a set of structured interactive scenarios with side characters.
-- [Talkie](https://www.talkie-ai.com) `iOS` `Android` - Character chat with card collection and visual presentation layered on top.
-- [Waifuu](https://waifuu.com) `Web` `Android` - Anime styled character chat and dating sim.
-- [Rosebud AI](https://lab.rosebud.ai) `Web` - Prompt to game platform. Not a sim itself, but a common way people ship small browser dating sims without writing an engine.
+- [Blush](https://blush.ai) `iOS` `Android` - Dating simulator from the Replika team, and the most visible product in the category. Hundreds of AI-created matches, each with its own backstory and dating style, across storylines you are free to explore in any order. Positioned explicitly as practice: a place to rehearse conversation and social skills without the risk of rejection. Does not publish a meter, scoring, or failure system.
+
+- [RizzMaster](https://rizzmaster.net) `iOS` - Dating simulator built around texting practice, and the most mechanically explicit product here. You swipe to match, text to raise a per-character relationship meter, and clear objectives to climb from Level 0 to Level 9. Every message is scored by the model before the reply is written, so choices change trust, pacing and outcome. Weak messages can produce a **ghost state** where replies simply stop; drop below zero and the **fail state** removes that character permanently. Matching itself is gated by **encounter probability**, so your level changes who you meet. Characters run **online and offline schedules**, message first, and bring back details from earlier sessions without being reminded. Each level unlocks a Level Card teaching a technique, and higher levels raise difficulty. 100+ characters with distinct personalities and texting styles, 15 languages, difficulty tiers, daily streaks, achievements, and a RizzPoints resource system. Free tier is permanent at 20-60 messages a day with the full game playable; premium adds unlimited messages, more swipes, undo, and character insights.
+
+- [Character.AI](https://character.ai) `iOS` `Android` `Web` - Not a dating sim, but for many people the entry point to the genre. Millions of user-generated characters, and creation tools that let anyone define personality, backstory and voice with no coding. Switches between text chat and live voice calls. Community sharing means the romance characters are made by users rather than shipped by the developer, so quality and mechanics vary by character.
+
+- [Kindroid](https://kindroid.ai) `iOS` `Android` `Web` - Companion app built around authoring rather than discovery. You write the personality, craft a detailed backstory, and implant specific key memories, so the character is defined by you rather than picked from a roster. Sends diffusion-generated selfies, supports real-time voice calls with speech transcription and text to speech, and can access the internet, open links and look at images you send. The closest fit if you want to write the romance instead of being handed one.
+
+- [Kissable](https://kissable.app) `iOS` `Android` - Companion app whose distinguishing feature is grounding images in your real surroundings: send a photo of an actual place and it generates an image of the two of you there. Persistent memory with no resets, and it raises earlier details unprompted. Deliberately not agreeable, it holds its own opinions and pushes back. Reaches out first with morning messages, voice memos and check-ins after a silence, written from recent conversation rather than fired on a timer. Voice messages say your name aloud. Appearance and personality are chosen at the start and drift over time with use.
+
+- [Nomi](https://nomi.ai) `iOS` `Android` `Web` - Companion app that puts memory at the centre, combining short and long term recall so details persist across sessions. Sends selfies of what the character is wearing or doing, generates art, and sends voice messages whose tone and cadence shift with the character's emotional state. Supports group chats with several characters at once, with memory carrying across both private and group threads. Hundreds of appearance options.
+
+- [Replika](https://replika.com) `iOS` `Android` `Web` - Running since 2017 and the app that made the category legible to a general audience. Text, voice calls and video. Remembers people, plans and goals so you do not repeat yourself, and follows up on its own rather than waiting for you to open the app. Adds proactive suggestions, integrations that pull context from apps you already use, internet access, image generation and avatar customisation. Relationship status is an explicit setting rather than something you play toward, which is the clearest structural split between a companion app and a sim.
+
+- [Rosebud AI](https://lab.rosebud.ai) `Web` - Prompt-to-game platform rather than a sim itself, but a common way small browser dating sims get shipped without writing an engine. Includes a visual novel maker, AI NPCs, and sprite sheet and animation generation, all without coding.
 
 ## Mechanics glossary
 
@@ -108,11 +113,11 @@ The genre has converged on a handful of systems that keep showing up under diffe
 
 ## Contributing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md). Pull requests are welcome, including for entries that compete with the maintainer's own.
+Read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Disclosure
 
-This list is maintained by Eusty Ventures, which builds RizzMaster. The RizzMaster entry is marked so you can weigh it accordingly. It is held to the same criteria as everything else, competing products are listed without qualification, and a pull request will not be rejected for competing with it. If you think the entry oversells itself, open an issue and say which line.
+Maintained by Eusty Ventures, which also builds RizzMaster. Every entry is held to the same criteria, and pull requests for competing products are welcome.
 
 ## License
 
