@@ -1,0 +1,17 @@
+name: Correction
+description: An entry is wrong, stale or dead
+labels: ["correction"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Wrong description, dead link, stale star count, changed licence, project abandoned.
+    validations:
+      required: true
