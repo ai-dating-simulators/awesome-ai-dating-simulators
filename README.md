@@ -109,6 +109,7 @@ The genre has converged on a handful of systems that keep showing up under diffe
 - [awesome-ai-companion](https://github.com/DasterProkio/awesome-ai-companion) - Open source AI companions, desktop pets, memory and proactive chat. Broader scope, less romance specific.
 - [GitHub topic: dating-simulator](https://github.com/topics/dating-simulator) - Mostly non AI dating sims, useful for engine and design reference.
 - [GitHub topic: ai-roleplay](https://github.com/topics/ai-roleplay) - Roleplay clients and frontends.
+- [companion-bench](https://github.com/rizzmasterapp/companion-bench) - Scripted, repeatable memory and consistency tests for AI companion and dating apps. Same 48-message script for every app, transcripts published, open to outside runs.
 
 ## Contributing
 
