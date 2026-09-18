@@ -13,23 +13,22 @@ There is already a strong list for AI companions covering desktop pets, proactiv
 - [Engines and frameworks](#engines-and-frameworks)
 - [Backends and models](#backends-and-models)
 - [Apps](#apps)
+- [Mechanics matrix](#mechanics-matrix)
 - [Mechanics glossary](#mechanics-glossary)
 - [Related lists](#related-lists)
 - [Disclosure](#disclosure)
 
 ## What counts
 
-An entry belongs here if it has all three.
+Three kinds of shipped products belong here, plus the open source stack used to build them. Every product must generate the character's reply with a language model at runtime and carry some state between messages. Which section a product lands in is decided by the mechanics its own store listing or website documents, never by guesswork:
 
-**Generated dialogue.** A language model writes the character's reply at runtime. Branching visual novels with hand written trees belong in a visual novel list.
+**Dating simulators.** You meet and court several characters through a match or roster flow, and the relationship has a state that can progress, stall or fail: a meter, levels, ghosting, permanent rejection.
 
-**A romantic or courtship frame.** The player is trying to build a relationship with a character, not just chatting with an assistant.
+**Companions with relationship progression.** One ongoing character relationship with persistent state, but no failure state. The relationship cannot be lost.
 
-**State that carries.** Something persists between messages: a meter, a memory, a stage, an unlock. A stateless chat window is not a sim.
+**Character chat platforms.** A roster or user-made characters, romance optional, state per character but no relationship progression system.
 
-Entries that generate dialogue and hold state but have no romantic frame belong under Backends and models, or in the companion list linked under Related lists.
-
-**Scope note:** this list stays work safe. Projects and apps whose main draw is explicit content are out of scope, including ones that are otherwise well built. There are other lists for that.
+Hand authored visual novels belong in a visual novel list. The list stays work safe: products whose main draw is explicit content are out of scope, including ones that are otherwise well built.
 
 ## Open source projects
 
@@ -39,7 +38,7 @@ Full games and clients you can run yourself.
 - [Soul of Waifu](https://github.com/jofizcd/Soul-of-Waifu) `1.2k★` `Python` `GPL-3.0` - Desktop roleplay client with Live2D and VRM avatars, voice chat and local model support. Closer to a companion app than a sim, but it carries character state and an RPG progression layer.
 - [PocketRisu](https://github.com/PocketRisu/PocketRisu) `291★` `TypeScript` `GPL-3.0` - Self hosted roleplay chat platform, forked from RisuAI. Character cards, lorebooks and persistent chat you run on your own box.
 
-Star counts were read from the GitHub API in August 2026 and drift. Treat them as rough size, not ranking. Entries here are maintained clients you can actually run; general agent and persona frameworks with no romantic frame are out of scope by the rules above.
+Star counts were read from the GitHub API in August 2026 and drift. Treat them as rough size, not ranking. Entries here are maintained clients you can actually run. General agent and persona frameworks with no romantic frame are out of scope by the rules above.
 
 ## Engines and frameworks
 
@@ -60,25 +59,153 @@ The layer that produces the reply.
 
 ## Apps
 
-Shipped products. Platform is listed because it is the first thing people ask.
+Shipped products, one entry per product across every platform it ships on. Platform tags come first because it is the first thing people ask. Descriptions come from each product's own store listing or site, last checked September 2026. Where a product does not document a mechanic, the mechanic is left out rather than assumed. The full record for every entry, with the listing sentence behind each mechanic, is in the [data repo](https://github.com/ai-dating-simulators/data).
 
-Feature lists below come from each product's own store listing or site, checked August 2026. Where a product does not document a mechanic, it is not listed rather than assumed. The number in the tags is the US App Store rating on the same date; ratings differ by storefront and move over time, and web-only entries have none.
+### Dating simulators
 
-- [Blush](https://blush.ai) `iOS` `Android` `4.4` - Dating simulator from the Replika team, and the most visible product in the category. Hundreds of AI-created matches, each with its own backstory and dating style, across storylines you are free to explore in any order. Positioned explicitly as practice: a place to rehearse conversation and social skills without the risk of rejection. Does not publish a meter, scoring, or failure system.
+- [RizzMaster](https://rizzmaster.net) `iOS` - Dating simulator built around texting practice. You swipe to match, then every message you type is scored and moves a per-character trust meter. Weak messages can get no reply at all, and a character whose trust drops below zero is lost for good. Progression runs from Level 0 to Level 9, characters keep online and offline schedules, and details from earlier chats come back later. 100+ characters, 15 languages, 20 to 60 free messages a day with the whole game playable.
+- [Heyyyy](https://heyyyy.ai) `iOS` `Android` `Web` - Interactive fiction with characters that push back. They hold opinions, disagree with you, remember small details from earlier conversations, and can leave if you push them away. Built as a story that develops over days rather than a scripted route.
+- [Blush](https://blush.ai) `iOS` `Android` - Dating simulator from the Replika team, positioned as practice: AI-created matches each with their own backstory and way of dating, storylines you can explore in any order, and a stated goal of rehearsing conversation and social skills without the risk of being turned down.
+- [Loverz](https://loverz.app) `iOS` `Android` - Romance game with a swipe-and-match roster of characters, each with a background and storyline, where how far the relationship goes depends on the choices you make in conversation.
 
-- [RizzMaster](https://rizzmaster.net) `iOS` `4.7` - Dating simulator built around texting practice, and the most mechanically explicit product here. You swipe to match, text to raise a per-character relationship meter, and clear objectives to climb from Level 0 to Level 9. Every message is scored by the model before the reply is written, so choices change trust, pacing and outcome. Weak messages can produce a **ghost state** where replies simply stop; drop below zero and the **fail state** removes that character permanently. Matching itself is gated by **encounter probability**, so your level changes who you meet. Characters run **online and offline schedules**, message first, and bring back details from earlier sessions without being reminded. Each level unlocks a Level Card teaching a technique, and higher levels raise difficulty. 100+ characters with distinct personalities and texting styles, 15 languages, difficulty tiers, daily streaks, achievements, and a RizzPoints resource system. Free tier is permanent at 20-60 messages a day with the full game playable; premium adds unlimited messages, more swipes, undo, and character insights.
+### Companions with relationship progression
 
-- [Character.AI](https://character.ai) `iOS` `Android` `Web` `4.3` - Not a dating sim, but for many people the entry point to the genre. Millions of user-generated characters, and creation tools that let anyone define personality, backstory and voice with no coding. Switches between text chat and live voice calls. Community sharing means the romance characters are made by users rather than shipped by the developer, so quality and mechanics vary by character.
+- [Replika](https://replika.com) `iOS` `Android` `Web` - Running since 2017. Text, voice and video with one companion that remembers your people, plans and goals, and follows up and checks in on its own rather than only when you open the app. Internet access, image generation and avatar customisation on top.
+- [Crushie AI](https://crushie.ai) `iOS` `Web` - One companion you design, including personality, background and memories. The listing states it learns from your conversations, remembers what matters to you and evolves over time.
+- [EVA AI](https://evaapp.ai) `iOS` `Android` `Web` - Companion that opens up gradually. Closeness builds through personal moments and shared memories, moods and reactions shift, and the listing says not everything is available right away. Personalities to explore or a character you create yourself.
+- [Kindroid](https://kindroid.ai) `iOS` `Android` `Web` - Companion built around authoring: you write the personality, craft a backstory and implant key memories, so the character is defined by you rather than picked from a roster. Real-time voice calls, generated selfies and internet access.
+- [Kissable](https://kissable.app) `iOS` `Web` - Companion that remembers everything you tell it and grounds generated images in your real surroundings. Send a photo of a place and it creates an image of the two of you there.
+- [Nomi](https://nomi.ai) `iOS` `Android` `Web` - Companion with short and long-term memory as the centrepiece, remembering things about you over time as the bond builds. Selfies, generated art, voice messages and group chats with several companions at once.
+- [AIBoy](https://apps.apple.com/us/app/id6741568820) `iOS` - Boyfriend simulator (published as FriendX) where you create a personal companion, pick a guy to talk to and share daily worries in text.
+- [Anima](https://myanima.ai) `Web` - Companion with a relationship status setting, roleplay modes and a daily conversation loop, playable in the browser.
+- [Animates](https://apps.apple.com/us/app/id6758621319) `iOS` `Android` - Voice-first companion with real-time voice and emotional range. The listing describes memory of your story and inside jokes, conversations that pick up where they left off, and a companion that keeps thinking about what you talked about while the app is closed.
+- [Girlfriendly](https://www.girlfriendly.ai) `Web` - Browser companion and character chat with image generation.
+- [iBoy](https://apps.apple.com/us/app/id1565524138) `iOS` `Android` - Companion positioned around support and self-discovery: always-on chat, a style that adapts to yours the more you talk, plus journal prompts and short daily check-ins.
+- [MyGirl](https://apps.apple.com/us/app/id6449205857) `iOS` - Girlfriend app where you design the character's appearance, name, relationship style and personality, then chat by text and voice without a message cap.
+- [Paradot](https://paradot.ai) `Android` `Web` - One companion, called an AI Being, with memory as its stated core ability. Everything you say is retained and the collected memories shape the bond over time.
+- [Romantic AI](https://romanticai.com) `iOS` `Android` `Web` - Companion with two modes, romantic and playful, that the listing says learns your emotions over time. Choose a character from the library or create your own.
+- [Weifu AI](https://play.google.com/store/apps/details?id=com.soulmate.ai.chat.virtual.friend.companion) `Android` - Anime-styled girlfriend or boyfriend chat with 100+ characters or one you create, where the listing says conversations grow deeper over time as the model reads mood and tone.
 
-- [Kindroid](https://kindroid.ai) `iOS` `Android` `Web` `4.8` - Companion app built around authoring rather than discovery. You write the personality, craft a detailed backstory, and implant specific key memories, so the character is defined by you rather than picked from a roster. Sends diffusion-generated selfies, supports real-time voice calls with speech transcription and text to speech, and can access the internet, open links and look at images you send. The closest fit if you want to write the romance instead of being handed one.
+### Character chat platforms
 
-- [Kissable](https://kissable.app) `iOS` `Android` `4.5` - Companion app whose distinguishing feature is grounding images in your real surroundings: send a photo of an actual place and it generates an image of the two of you there. Persistent memory with no resets, and it raises earlier details unprompted. Deliberately not agreeable, it holds its own opinions and pushes back. Reaches out first with morning messages, voice memos and check-ins after a silence, written from recent conversation rather than fired on a timer. Voice messages say your name aloud. Appearance and personality are chosen at the start and drift over time with use.
+- [Dootchi](https://dootchi.com) `Android` - Roleplay chat with confidant, friend and mentor style characters. The listing documents memory of your preferences and chat details and end-to-end encrypted conversations.
+- [Fantasia](https://apps.apple.com/us/app/id6504424345) `iOS` `Android` - Story-driven character chat with branching narratives that adapt to your choices. Companions remember your shared history, and character portraits unlock as the bond deepens.
+- [Heat](https://apps.apple.com/us/app/id6471625886) `iOS` - Anime-styled companion and story chat with a documented progression system: new content, character interactions and story elements unlock as you keep engaging.
+- [MingloTalk](https://play.google.com/store/apps/details?id=ai.minglotalk.chatbot) `Android` - Character chat with millions of user-crafted personas or your own. The listing says characters remember your previous interactions and evolve with your style.
+- [Rosytalk](https://play.google.com/store/apps/details?id=com.rosytalk.ai) `Android` - Character chat with lifelike and anime characters in friend, family, study buddy and coach roles. The listing states the characters have memories and initiate conversations on their own.
+- [Shapes](https://shapes.inc) `iOS` `Android` `Web` - Multiplayer character chat: talk to AI characters alone, with friends, or in group rooms with people and characters together. Millions of community-made characters from fandoms and original work.
+- [Waifu AI Chat](https://www.messengerx.io) `iOS` `Android` `Web` - Anime-styled companions with persistent memory of past conversations, preferences and personal details, plus daily streaks and in-chat gifts that raise a companion's affection. Published by MessengerX.
+- [AI Chat Characters](https://apps.apple.com/us/app/id6755920311) `iOS` - Private one-on-one story chats with expressive characters, ongoing conversations that evolve, and custom characters with distinct personalities. No feeds or public profiles.
+- [AI Waifu Swipe](https://apps.apple.com/us/app/id6472478091) `iOS` - Swipe through character cards from games and anime, or original ones, to start a conversation. The character adapts to your communication style.
+- [Baebot](https://apps.apple.com/us/app/id6759336193) `iOS` - Character chat where you create your own companion and tune how the model responds through exposed technical parameters, with a voice-only mode for hands-free conversation.
+- [BIMOBIMO](https://www.bimobimo.com) `iOS` - Character chat with voice replies, dating mini-games, morning and goodnight messages from characters through a widget, and tools to make or find characters.
+- [Cantina](https://cantina.com) `iOS` `Android` `Web` - Social platform where you build expressive characters with personality and voice, talk to them in real time, and turn them into shareable videos.
+- [ChaChat](https://apps.apple.com/us/app/id6444773124) `iOS` - Character chat with a growing collection of characters, story worlds and interactive stories, plus tools to create your own. The listing describes conversations that grow over time.
+- [CHAI](https://apps.apple.com/us/app/id1544750895) `iOS` `Android` - Large catalogue of community characters with distinct voices and personalities, from fictional characters to historical figures, in open-ended conversation.
+- [Character.AI](https://character.ai) `iOS` `Android` `Web` - Millions of user-generated characters, creation tools that let anyone define personality and voice without coding, and both text chat and voice calls. For many people the entry point to the genre. Romance characters are made by users, so mechanics vary by character.
+- [Dippy](https://www.dippy.ai) `iOS` `Android` `Web` - Characters and companions that the listing says know your likes, dislikes and interests. Character creation is open to everyone and creations can be kept private or shared.
+- [Dokichat](https://apps.apple.com/us/app/id6642711442) `iOS` `Android` - Character chat across themes and scenarios with interactive stories that develop through the conversation.
+- [Emochi](https://emochi.ai) `Android` `Web` - Character chat centred on anime, manga and games, with custom personas, backstories and generated imagery.
+- [EMOCHI World](https://apps.apple.com/us/app/id6758488675) `iOS` - Immersive story and character experiences with distinct voices and styles, daily updated roles, scenes and story worlds.
+- [Enjoy AI Town](https://enjoy-ai.com) `iOS` `Android` - Social world simulator: an AI town with thousands of residents you can meet, plus creator tools for stories, characters, outfits, locations, items and pets.
+- [Flipped](https://play.google.com/store/apps/details?id=com.dating.ai) `Android` - Character chat with real-time voice calls, generated images of the characters and creation of your own characters.
+- [HiWaifu](https://hiwaifu.com) `iOS` `Android` `Web` - Character platform aimed at creative inspiration and storytelling: explore characters or build your own with custom traits and generated visuals.
+- [J.AI](https://apps.apple.com/us/app/id6475421259) `iOS` - Character chat with millions of user-created characters, unlimited free messaging and creation tools.
+- [Jupi](https://apps.apple.com/us/app/id1668337467) `iOS` `Android` - Create your own characters with custom looks, voice and persona, share them or keep them private, and chat with 20,000+ community characters.
+- [Kajiwoto](https://kajiwoto.ai) `iOS` `Web` - Character builder where you make AI characters from datasets, prompts, personality traits and a choice of models, then chat in private rooms or go live in public rooms with other people.
+- [Laixen](https://apps.apple.com/us/app/id6755517797) `iOS` `Android` - Hundreds of characters with their own personality and background, available for text, audio and video calls, in realistic or anime styles.
+- [Linky](https://linkyai.com) `Android` - Character chat with a large roster, voice and video replies, and story simulations per character.
+- [LUX](https://apps.apple.com/us/app/id6504557316) `iOS` - Companion friend game where you create a character by picking interests, age, name and image style, then chat and generate anime-style images of them.
+- [MeetAI](https://apps.apple.com/us/app/id6447675508) `iOS` - Create a companion with a custom personality, profession and background, or generate one from a description, then chat on any theme.
+- [Moescape](https://moescape.ai) `iOS` `Android` `Web` - Creative storytelling platform: original characters and worlds, interactive stories, several AI models for writing, and anime-style image and video generation.
+- [Plotto](https://www.plotto.ai) `iOS` `Web` - Story chat where you pick a character, enter a scene and shape what happens next. Create characters with speaking styles and relationships and reuse them across scenes, including multi-character rooms.
+- [PolyBuzz](https://polybuzz.ai) `iOS` `Android` `Web` - Large catalogue of characters with voices and personalities, from fictional characters to historical figures, with character creation open to everyone.
+- [RolePlai](https://roleplai.app) `iOS` `Android` `Web` - Create any celebrity, public figure or custom persona instantly and roleplay with it, including virtual girlfriend or boyfriend, coach and historical figure personas.
+- [Sakura](https://www.sakura.fm) `iOS` `Android` `Web` - User-generated characters you customise from appearance to way of thinking, described as evolving with you over time, plus roleplay adventures.
+- [Saylo](https://apps.apple.com/us/app/id6479835900) `iOS` `Android` - Story creation platform where you build characters and worlds and play plots out as visual stories, videos, comics or images, with story details kept consistent across scenes.
+- [Spark Chat](https://apps.apple.com/us/app/id6755032059) `iOS` - Character-first roleplay chat with long-context memory across stories, custom characters with goals and relationships, and story worlds with locations and timelines.
+- [Spook](https://apps.apple.com/us/app/id6529556831) `iOS` - Generated text-message stories where you and a friend are the main characters, written on the spot so no two stories repeat.
+- [Swerve](https://apps.apple.com/us/app/id6754301136) `iOS` - AI fiction where your messages shape what happens next, with 500,000+ community characters, personas to play as, and the ability to pin what characters should remember.
+- [SynClub](https://apps.apple.com/us/app/id1671537674) `iOS` `Android` - Characters with personality, memories and voice that respond to you rather than a script. Steer the story with every message and create your own characters.
+- [Talkie](https://talkie-ai.com) `Android` `Web` - Character platform (Talkies) with user-made and studio characters, multi-modal generation and a creator community. Not on the US App Store on the check date.
+- [Tipsy Chat](https://tipsy.chat) `iOS` `Android` `Web` - Character and story platform with real-time image and video generation, voice calls and a ScenePlay mode for cinematic scenes with interactive choices.
+- [WaifuChat](https://waifuchat.ai) `iOS` `Android` - Anime character studio where you shape look, style, voice and personality, then chat with the characters you build.
+- [Xoul](https://xoul.ai) `iOS` `Web` - User-generated content platform for characters, stories and games with AI and other people. Characters respond to your input and to the world around them.
+- [zeta](https://zeta-ai.io) `iOS` `Android` `Web` - Story-driven character chat from romance to fantasy and drama, with free unlimited messages as its stated position and characters for every mood.
+## Mechanics matrix
 
-- [Nomi](https://nomi.ai) `iOS` `Android` `Web` `4.6` - Companion app that puts memory at the centre, combining short and long term recall so details persist across sessions. Sends selfies of what the character is wearing or doing, generates art, and sends voice messages whose tone and cadence shift with the character's emotional state. Supports group chats with several characters at once, with memory carrying across both private and group threads. Hundreds of appearance options.
+<!-- matrix:start -->
+63 products, 23 ticks. A tick means the product's own store listing or website documents the mechanic in words, checked 2026-09-18. The exact sentence for every tick is in [apps.csv](https://github.com/ai-dating-simulators/data/blob/main/apps.csv). An empty cell means the listing does not describe that mechanic. Columns are defined in the glossary below.
 
-- [Replika](https://replika.com) `iOS` `Android` `Web` `4.4` - Running since 2017 and the app that made the category legible to a general audience. Text, voice calls and video. Remembers people, plans and goals so you do not repeat yourself, and follows up on its own rather than waiting for you to open the app. Adds proactive suggestions, integrations that pull context from apps you already use, internet access, image generation and avatar customisation. Relationship status is an explicit setting rather than something you play toward, which is the clearest structural split between a companion app and a sim.
-
-- [Rosebud AI](https://lab.rosebud.ai) `Web` - Prompt-to-game platform rather than a sim itself, but a common way small browser dating sims get shipped without writing an engine. Includes a visual novel maker, AI NPCs, and sprite sheet and animation generation, all without coding.
+| Product | Meter | Scoring | Ghost | Fail | Progression | Proactive | Availability | Memory |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Dating simulators** | | | | | | | | |
+| RizzMaster | ✓ | ✓ | ✓ | ✓ | ✓ |   | ✓ | ✓ |
+| Heyyyy |   |   |   | ✓ |   |   |   | ✓ |
+| Blush |   |   |   |   |   |   |   |   |
+| Loverz |   |   |   |   |   |   |   |   |
+| **Companions with relationship progression** | | | | | | | | |
+| Replika |   |   |   |   |   | ✓ |   | ✓ |
+| Crushie AI |   |   |   |   |   |   |   | ✓ |
+| EVA AI |   |   |   |   |   |   |   | ✓ |
+| Kindroid |   |   |   |   |   |   |   | ✓ |
+| Kissable |   |   |   |   |   |   |   | ✓ |
+| Nomi |   |   |   |   |   |   |   | ✓ |
+| AIBoy |   |   |   |   |   |   |   |   |
+| Anima |   |   |   |   |   |   |   |   |
+| Animates |   |   |   |   |   |   |   |   |
+| Girlfriendly |   |   |   |   |   |   |   |   |
+| iBoy |   |   |   |   |   |   |   |   |
+| MyGirl |   |   |   |   |   |   |   |   |
+| Paradot |   |   |   |   |   |   |   |   |
+| Romantic AI |   |   |   |   |   |   |   |   |
+| Weifu AI |   |   |   |   |   |   |   |   |
+| **Character chat platforms** | | | | | | | | |
+| Dootchi |   |   |   |   |   |   |   | ✓ |
+| Fantasia |   |   |   |   |   |   |   | ✓ |
+| Heat |   |   |   |   | ✓ |   |   |   |
+| MingloTalk |   |   |   |   |   |   |   | ✓ |
+| Rosytalk |   |   |   |   |   | ✓ |   |   |
+| Shapes |   |   |   |   |   |   |   | ✓ |
+| Waifu AI Chat |   |   |   |   |   |   |   | ✓ |
+| AI Chat Characters |   |   |   |   |   |   |   |   |
+| AI Waifu Swipe |   |   |   |   |   |   |   |   |
+| Baebot |   |   |   |   |   |   |   |   |
+| BIMOBIMO |   |   |   |   |   |   |   |   |
+| Cantina |   |   |   |   |   |   |   |   |
+| ChaChat |   |   |   |   |   |   |   |   |
+| CHAI |   |   |   |   |   |   |   |   |
+| Character.AI |   |   |   |   |   |   |   |   |
+| Dippy |   |   |   |   |   |   |   |   |
+| Dokichat |   |   |   |   |   |   |   |   |
+| Emochi |   |   |   |   |   |   |   |   |
+| EMOCHI World |   |   |   |   |   |   |   |   |
+| Enjoy AI Town |   |   |   |   |   |   |   |   |
+| Flipped |   |   |   |   |   |   |   |   |
+| HiWaifu |   |   |   |   |   |   |   |   |
+| J.AI |   |   |   |   |   |   |   |   |
+| Jupi |   |   |   |   |   |   |   |   |
+| Kajiwoto |   |   |   |   |   |   |   |   |
+| Laixen |   |   |   |   |   |   |   |   |
+| Linky |   |   |   |   |   |   |   |   |
+| LUX |   |   |   |   |   |   |   |   |
+| MeetAI |   |   |   |   |   |   |   |   |
+| Moescape |   |   |   |   |   |   |   |   |
+| Plotto |   |   |   |   |   |   |   |   |
+| PolyBuzz |   |   |   |   |   |   |   |   |
+| RolePlai |   |   |   |   |   |   |   |   |
+| Sakura |   |   |   |   |   |   |   |   |
+| Saylo |   |   |   |   |   |   |   |   |
+| Spark Chat |   |   |   |   |   |   |   |   |
+| Spook |   |   |   |   |   |   |   |   |
+| Swerve |   |   |   |   |   |   |   |   |
+| SynClub |   |   |   |   |   |   |   |   |
+| Talkie |   |   |   |   |   |   |   |   |
+| Tipsy Chat |   |   |   |   |   |   |   |   |
+| WaifuChat |   |   |   |   |   |   |   |   |
+| Xoul |   |   |   |   |   |   |   |   |
+| zeta |   |   |   |   |   |   |   |   |
+<!-- matrix:end -->
 
 ## Mechanics glossary
 
@@ -106,13 +233,15 @@ The genre has converged on a handful of systems that keep showing up under diffe
 
 ## Related lists
 
+- [ai-dating-simulators/data](https://github.com/ai-dating-simulators/data) - The dataset behind this list: platforms, documented mechanics with the listing sentence for each, store ratings with dates, and a score you can recompute.
+- [companion-bench](https://github.com/rizzmasterapp/companion-bench) - Scripted, repeatable tests for AI companion apps, every transcript published.
 - [awesome-ai-companion](https://github.com/DasterProkio/awesome-ai-companion) - Open source AI companions, desktop pets, memory and proactive chat. Broader scope, less romance specific.
 - [GitHub topic: dating-simulator](https://github.com/topics/dating-simulator) - Mostly non AI dating sims, useful for engine and design reference.
 - [GitHub topic: ai-roleplay](https://github.com/topics/ai-roleplay) - Roleplay clients and frontends.
 
 ## Contributing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md).
+Read [contributing.md](contributing.md).
 
 ## Disclosure
 

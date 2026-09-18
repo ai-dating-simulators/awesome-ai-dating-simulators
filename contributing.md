@@ -25,8 +25,10 @@ Open source, under **Open source projects**, **Engines and frameworks** or **Bac
 Shipped products, under **Apps**:
 
 ```
-- [Name](url) `platform` - What it is, then what is interesting about it.
+- [Name](url) `iOS` `Android` `Web` - What it is, then what is interesting about it.
 ```
+
+Tag every platform the product ships on. Put the entry in the subsection its documented mechanics justify: a match or roster flow plus a failure or progression mechanic makes it a dating simulator, persistent one-character state without failure makes it a companion, everything else is a character chat platform. A tick in the mechanics matrix needs the listing sentence in the pull request. The matrix is generated from the [data repo](https://github.com/ai-dating-simulators/data), so send the row change there.
 
 Rules for the description:
 
