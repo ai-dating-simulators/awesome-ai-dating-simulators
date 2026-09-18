@@ -1,6 +1,6 @@
 # Awesome AI Dating Simulators [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-![Products](https://img.shields.io/badge/products-87-blue) ![Platforms](https://img.shields.io/badge/platforms-iOS%20%C2%B7%20Android%20%C2%B7%20Web-lightgrey) ![Data](https://img.shields.io/badge/data-CSV%20%2B%20JSON-green) ![License](https://img.shields.io/badge/license-CC0-lightgrey) ![Last checked](https://img.shields.io/badge/last%20checked-2026--09--18-informational)
+![lint](https://github.com/ai-dating-simulators/awesome-ai-dating-simulators/actions/workflows/lint.yml/badge.svg) ![Products](https://img.shields.io/badge/products-87-blue) ![Platforms](https://img.shields.io/badge/platforms-iOS%20%C2%B7%20Android%20%C2%B7%20Web-lightgrey) ![Data](https://img.shields.io/badge/data-CSV%20%2B%20JSON-green) ![License](https://img.shields.io/badge/license-CC0-lightgrey) ![Last checked](https://img.shields.io/badge/last%20checked-2026--09--18-informational)
 
 > Dating simulators, companions and character chat apps where a language model writes the reply at runtime, plus the open source projects, engines and backends used to build them.
 
